@@ -1,0 +1,100 @@
+# Corrida v3 — portadas institucionales (189 URLs del Excel ordenado).
+# Modo secciones sin topes de páginas (97,7 % alcance / 84,6 % recall medido),
+# cerrado por saturación o por 90 min de reloj por sitio.
+compliance:
+  default_crawl_delay: 2.0
+  max_requests_per_domain: 20000
+  on_403_429: backoff_then_skip
+  on_captcha: skip_and_log
+  respect_robots_txt: true
+discovery:
+  content_hints:
+  - /articulo
+  - /article
+  - /noticia
+  - /news
+  - /blog
+  - /post
+  - /publicacion
+  - /paper
+  - /doi
+  - /informe
+  - /comunicado
+  - /abstract
+  exclude_patterns:
+  - /login
+  - /signin
+  - /cart
+  - /checkout
+  - /tag/
+  - /etiqueta/
+  - ?share=
+  - /wp-admin
+  - /feed
+  - .jpg
+  - .png
+  - .gif
+  - .css
+  - .js
+  - .ico
+  - .svg
+  - .mp4
+  - .zip
+  - /accounts/
+  - /orcid
+  - /annotations
+  - /RestfulWebService
+  - /developers
+  - /downloads
+  - .jpeg
+  - .webp
+  follow_subdomains: false
+  max_depth: 3
+  max_listing_pages: 100000
+  max_pages_per_section: 3000
+  max_pages_per_site: 6000
+  max_section_depth: 4
+  max_sections: 20
+  max_subsections: 12
+  mode: sections
+  use_sitemaps: true
+  exhaustive: true
+  saturation_window: 80
+  max_seconds_per_site: 5400
+extraction:
+  min_words_for_valid_article: 40
+  pdf:
+    download: true
+    max_size_mb: 30
+    ocr_chars_per_page_threshold: 120
+    ocr_image_coverage_threshold: 0.85
+fetching:
+  dynamic_detection:
+    min_text_length: 400
+    spa_markers:
+    - __NEXT_DATA__
+    - ng-app
+    - data-reactroot
+    - id="root"
+    - id="app"
+    - nuxt
+  max_retries: 3
+  playwright:
+    extra_wait_ms: 2000
+    headless: true
+    pdf_click_probe: true
+    scroll_passes: 3
+    wait_until: networkidle
+  timeout_seconds: 45
+identity:
+  contact_email: ruben.quintupil@cenia.cl
+  user_agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)
+    Chrome/126.0 Safari/537.36
+seeds: []
+storage:
+  base_dir: /workspace1-ranokau/projects/datatrainlatamgpt/gpt/scraping/autorizadas_v3/portadas
+  markdown_dir: markdown
+  master_index: metadata/index.json
+  metadata_dir: metadata
+  ocr_pending_file: ocr_pending/ocr_queue.json
+  pdf_dir: pdfs

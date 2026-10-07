@@ -1,0 +1,378 @@
+{
+  "A_impresion_limpia": {
+    "rapidocr": {
+      "seconds_per_page": 4.2,
+      "pages": [
+        {
+          "page": 10,
+          "seconds": 4.1,
+          "chars": 2608,
+          "tokens": 412,
+          "wordy_ratio": 0.681,
+          "token_f1_vs_truth": 0.884,
+          "char_similarity": 0.588
+        },
+        {
+          "page": 30,
+          "seconds": 4.3,
+          "chars": 2599,
+          "tokens": 405,
+          "wordy_ratio": 0.677,
+          "token_f1_vs_truth": 0.856,
+          "char_similarity": 0.914
+        }
+      ],
+      "mean_token_f1": 0.87,
+      "mean_char_similarity": 0.751,
+      "mean_wordy_ratio": 0.679
+    },
+    "easyocr": {
+      "seconds_per_page": 9.6,
+      "pages": [
+        {
+          "page": 10,
+          "seconds": 9.6,
+          "chars": 2603,
+          "tokens": 409,
+          "wordy_ratio": 0.69,
+          "token_f1_vs_truth": 0.989,
+          "char_similarity": 0.988
+        },
+        {
+          "page": 30,
+          "seconds": 9.6,
+          "chars": 2743,
+          "tokens": 425,
+          "wordy_ratio": 0.702,
+          "token_f1_vs_truth": 0.979,
+          "char_similarity": 0.654
+        }
+      ],
+      "mean_token_f1": 0.984,
+      "mean_char_similarity": 0.821,
+      "mean_wordy_ratio": 0.696
+    },
+    "doctr": {
+      "seconds_per_page": 2.2,
+      "pages": [
+        {
+          "page": 10,
+          "seconds": 2.2,
+          "chars": 2609,
+          "tokens": 411,
+          "wordy_ratio": 0.68,
+          "token_f1_vs_truth": 0.895,
+          "char_similarity": 0.945
+        },
+        {
+          "page": 30,
+          "seconds": 2.2,
+          "chars": 2763,
+          "tokens": 429,
+          "wordy_ratio": 0.667,
+          "token_f1_vs_truth": 0.885,
+          "char_similarity": 0.921
+        }
+      ],
+      "mean_token_f1": 0.89,
+      "mean_char_similarity": 0.933,
+      "mean_wordy_ratio": 0.673
+    },
+    "paddle_vl": {
+      "seconds_per_page": 3.1,
+      "pages": [
+        {
+          "page": 10,
+          "seconds": 2.9,
+          "chars": 2620,
+          "tokens": 415,
+          "wordy_ratio": 0.679,
+          "token_f1_vs_truth": 0.995,
+          "char_similarity": 0.998
+        },
+        {
+          "page": 30,
+          "seconds": 3.3,
+          "chars": 2776,
+          "tokens": 433,
+          "wordy_ratio": 0.672,
+          "token_f1_vs_truth": 0.977,
+          "char_similarity": 0.995
+        }
+      ],
+      "mean_token_f1": 0.986,
+      "mean_char_similarity": 0.996,
+      "mean_wordy_ratio": 0.675
+    }
+  },
+  "B_escaneo_antiguo": {
+    "rapidocr": {
+      "seconds_per_page": 6.2,
+      "pages": [
+        {
+          "page": 30,
+          "seconds": 5.5,
+          "chars": 2890,
+          "tokens": 351,
+          "wordy_ratio": 0.605
+        },
+        {
+          "page": 180,
+          "seconds": 6.8,
+          "chars": 4351,
+          "tokens": 352,
+          "wordy_ratio": 0.617
+        }
+      ],
+      "mean_wordy_ratio": 0.611
+    },
+    "easyocr": {
+      "seconds_per_page": 17.7,
+      "pages": [
+        {
+          "page": 30,
+          "seconds": 14.8,
+          "chars": 3054,
+          "tokens": 501,
+          "wordy_ratio": 0.675
+        },
+        {
+          "page": 180,
+          "seconds": 20.5,
+          "chars": 4783,
+          "tokens": 773,
+          "wordy_ratio": 0.68
+        }
+      ],
+      "mean_wordy_ratio": 0.677
+    },
+    "doctr": {
+      "seconds_per_page": 3.8,
+      "pages": [
+        {
+          "page": 30,
+          "seconds": 3.1,
+          "chars": 3071,
+          "tokens": 504,
+          "wordy_ratio": 0.644
+        },
+        {
+          "page": 180,
+          "seconds": 4.6,
+          "chars": 4783,
+          "tokens": 778,
+          "wordy_ratio": 0.657
+        }
+      ],
+      "mean_wordy_ratio": 0.651
+    },
+    "paddle_vl": {
+      "seconds_per_page": 4.6,
+      "pages": [
+        {
+          "page": 30,
+          "seconds": 3.6,
+          "chars": 2849,
+          "tokens": 470,
+          "wordy_ratio": 0.662
+        },
+        {
+          "page": 180,
+          "seconds": 5.7,
+          "chars": 4794,
+          "tokens": 787,
+          "wordy_ratio": 0.672
+        }
+      ],
+      "mean_wordy_ratio": 0.667
+    },
+    "_consenso_token_f1": {
+      "rapidocr~easyocr": 0.524,
+      "rapidocr~doctr": 0.582,
+      "rapidocr~paddle_vl": 0.52,
+      "easyocr~doctr": 0.856,
+      "easyocr~paddle_vl": 0.953,
+      "doctr~paddle_vl": 0.852
+    }
+  },
+  "C_escaneo_denso": {
+    "rapidocr": {
+      "seconds_per_page": 4.2,
+      "pages": [
+        {
+          "page": 20,
+          "seconds": 4.6,
+          "chars": 2415,
+          "tokens": 409,
+          "wordy_ratio": 0.651
+        },
+        {
+          "page": 60,
+          "seconds": 3.8,
+          "chars": 2245,
+          "tokens": 371,
+          "wordy_ratio": 0.651
+        }
+      ],
+      "mean_wordy_ratio": 0.651
+    },
+    "easyocr": {
+      "seconds_per_page": 13.3,
+      "pages": [
+        {
+          "page": 20,
+          "seconds": 13.7,
+          "chars": 2588,
+          "tokens": 431,
+          "wordy_ratio": 0.658
+        },
+        {
+          "page": 60,
+          "seconds": 12.8,
+          "chars": 2844,
+          "tokens": 462,
+          "wordy_ratio": 0.682
+        }
+      ],
+      "mean_wordy_ratio": 0.67
+    },
+    "doctr": {
+      "seconds_per_page": 2.7,
+      "pages": [
+        {
+          "page": 20,
+          "seconds": 2.6,
+          "chars": 2583,
+          "tokens": 436,
+          "wordy_ratio": 0.64
+        },
+        {
+          "page": 60,
+          "seconds": 2.8,
+          "chars": 2829,
+          "tokens": 463,
+          "wordy_ratio": 0.675
+        }
+      ],
+      "mean_wordy_ratio": 0.657
+    },
+    "paddle_vl": {
+      "seconds_per_page": 3.3,
+      "pages": [
+        {
+          "page": 20,
+          "seconds": 3.2,
+          "chars": 2583,
+          "tokens": 435,
+          "wordy_ratio": 0.656
+        },
+        {
+          "page": 60,
+          "seconds": 3.5,
+          "chars": 2837,
+          "tokens": 463,
+          "wordy_ratio": 0.67
+        }
+      ],
+      "mean_wordy_ratio": 0.663
+    },
+    "_consenso_token_f1": {
+      "rapidocr~easyocr": 0.84,
+      "rapidocr~doctr": 0.906,
+      "rapidocr~paddle_vl": 0.835,
+      "easyocr~doctr": 0.894,
+      "easyocr~paddle_vl": 0.976,
+      "doctr~paddle_vl": 0.898
+    }
+  },
+  "D_capa_corrupta": {
+    "rapidocr": {
+      "seconds_per_page": 5.9,
+      "pages": [
+        {
+          "page": 40,
+          "seconds": 5.2,
+          "chars": 2496,
+          "tokens": 319,
+          "wordy_ratio": 0.659
+        },
+        {
+          "page": 90,
+          "seconds": 6.6,
+          "chars": 3576,
+          "tokens": 495,
+          "wordy_ratio": 0.643
+        }
+      ],
+      "mean_wordy_ratio": 0.651
+    },
+    "easyocr": {
+      "seconds_per_page": 16.4,
+      "pages": [
+        {
+          "page": 40,
+          "seconds": 14.3,
+          "chars": 2630,
+          "tokens": 381,
+          "wordy_ratio": 0.739
+        },
+        {
+          "page": 90,
+          "seconds": 18.5,
+          "chars": 3899,
+          "tokens": 578,
+          "wordy_ratio": 0.704
+        }
+      ],
+      "mean_wordy_ratio": 0.722
+    },
+    "doctr": {
+      "seconds_per_page": 3.0,
+      "pages": [
+        {
+          "page": 40,
+          "seconds": 2.4,
+          "chars": 2647,
+          "tokens": 381,
+          "wordy_ratio": 0.726
+        },
+        {
+          "page": 90,
+          "seconds": 3.5,
+          "chars": 3960,
+          "tokens": 579,
+          "wordy_ratio": 0.687
+        }
+      ],
+      "mean_wordy_ratio": 0.707
+    },
+    "paddle_vl": {
+      "seconds_per_page": 4.0,
+      "pages": [
+        {
+          "page": 40,
+          "seconds": 3.3,
+          "chars": 2723,
+          "tokens": 385,
+          "wordy_ratio": 0.693
+        },
+        {
+          "page": 90,
+          "seconds": 4.7,
+          "chars": 4084,
+          "tokens": 595,
+          "wordy_ratio": 0.674
+        }
+      ],
+      "mean_wordy_ratio": 0.683
+    },
+    "_consenso_token_f1": {
+      "rapidocr~easyocr": 0.794,
+      "rapidocr~doctr": 0.866,
+      "rapidocr~paddle_vl": 0.801,
+      "easyocr~doctr": 0.879,
+      "easyocr~paddle_vl": 0.978,
+      "doctr~paddle_vl": 0.881
+    }
+  }
+}

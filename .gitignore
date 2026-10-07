@@ -216,3 +216,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---------------------------------------------------------------------------
+# WebHarvest
+# ---------------------------------------------------------------------------
+# corpus recolectados (regenerables con `python main.py --config ...`)
+data/
+data_battery/
+data_prod/
+data_europepmc/
+# entorno de evaluación OCR (regenerable, ver ocr-eval/README.md)
+ocr-eval/.venv/
+# TMPDIR por job de Slurm (Playwright)
+slurm/tmp/
+slurm/logs/
+# sesiones sqlite "en memoria" escritas como archivo por error
+:memory:*
+.DS_Store
+*.tmp

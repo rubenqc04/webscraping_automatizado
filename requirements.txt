@@ -1,0 +1,30 @@
+# --- Núcleo HTTP / parsing ---
+httpx>=0.27
+beautifulsoup4>=4.12
+lxml>=5.0
+tenacity>=8.2
+
+# --- Extracción de contenido principal (HTML -> texto/markdown) ---
+trafilatura>=1.9
+markdownify>=0.13
+python-dateutil>=2.9
+charset-normalizer>=3.3
+
+# --- Renderizado de páginas dinámicas (JS) ---
+playwright>=1.44        # luego: playwright install chromium
+
+# --- PDFs ---
+pymupdf>=1.24
+pymupdf4llm>=0.0.17
+mammoth>=1.6        # .docx -> HTML semántico -> Markdown
+
+# --- Utilidades ---
+pyyaml>=6.0
+tldextract>=5.1
+
+# --- OCR (opcional, para la etapa diferida de OCR) ---
+# pytesseract>=0.3.10
+# ocrmypdf>=16.0
+# También se puede optar por servicios/modelos VLM en la etapa de OCR.
+protego>=0.3        # robots.txt con comodines (*, $) estilo Google
+openpyxl>=3.1      # leer listas de fuentes autorizadas en Excel
